@@ -1,0 +1,120 @@
+.website__prefooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-family);
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+}
+
+.website__prefooter__text {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.website__prefooter__text h1 {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+    color: #090e40;
+    margin-bottom: 30px;
+    max-width: 960px;
+}
+
+.website__prefooter__text p{
+    font-size: 18px;
+    color: #424242;
+}
+
+.website__prefooter__input{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.website__prefooter__input input{
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+
+    background: white;
+    border-radius: 5px 0px 0px 5px;
+    color: #3D6184;
+
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.website__prefooter__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    background: #2136f2;
+    font-family: var(--font-family);
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.website__prefooter__image img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+
+@media only screen and (max-width:800px) {
+    .website__prefooter__text {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .website__prefooter__text h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .website__prefooter__input {
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .website__prefooter__text {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .website__prefooter__text h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .website__prefooter__text p {
+        font-size: 16px;
+    }
+    .website__prefooter__input {
+        padding-bottom: 40px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .website__prefooter__input input {
+        border-radius: 7px;
+    }
+    .website__prefooter__input button {
+        border-radius: 7px;
+    }
+}

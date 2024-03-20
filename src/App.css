@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/*body {
+    background: var(--color-bg)
+}*/
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.gradient__bg {
+    background: linear-gradient(to top, rgb(251, 194, 235) 0%, rgb(166, 193, 238) 100%);
+}
+
+.gradient__pfg{
+    background: linear-gradient(178deg, rgba(235, 237, 238, 0.51) 33%, rgba(99, 178, 213, 0.73) 78%);
+}
+
+.cta.black {
+    background-color: #000;
+}
+
+.cta {
+    color: #fff;
+    text-align: center;
+    border-radius: 9px;
+    padding: 10px 32px;
+    font-weight: 600;
+    transition: color .5s, background-color .5s;
+}
+
+.w-button {
+    line-height: inherit;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+.gradient__text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 700px) {
+    .section__padding {
+        padding: 4rem;
+    }
+    .section__margin {
+        margin: 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section__padding {
+        padding: 4rem 2rem;
+    }
+    .section__margin {
+        margin: 4rem 2rem;
+    }
+}

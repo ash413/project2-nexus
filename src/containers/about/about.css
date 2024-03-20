@@ -1,0 +1,106 @@
+.website__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.website__about-image {
+    width: 48% ;
+}
+
+.website__about-maintext {
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.website__about-text {
+    max-width: 100%;
+}
+
+.website__about-text h1 {
+    color: #090e40;
+    margin-bottom: 30px;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+.website__about-text p {
+    margin-bottom: 30px;
+    color: #424242;
+    font-size: 22px;
+    line-height:32px;
+
+}
+
+.website__about-button button {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    font-family: var(--font-family);
+    color: #fff;
+    padding: 10px 32px;
+    border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*@media screen and (max-width:991) {
+    .website__about {
+        row-gap: 40px;
+        flex-direction: column;
+    }
+    .website__about-text h1{
+        
+    }
+}*/
+/* Tablet (max-width: 800px) */
+@media only screen and (max-width: 800px) {
+    .website__about {
+        margin-left: 60px;
+        margin-right: 60px;
+        flex-direction: column;
+        align-items: center;
+        text-align:left;
+    }
+
+    .website__about-image {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .website__about-maintext {
+        width: 80%;
+    }
+    .website__about-text h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
+
+/* Mobile devices (max-width: 375px) */
+@media only screen and (max-width: 400px) {
+    .website__about {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .website__about-image {
+        width: 10%;
+    }
+    .website__about-text h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .website__about-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .website__about-button button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
